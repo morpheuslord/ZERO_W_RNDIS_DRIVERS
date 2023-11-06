@@ -11,7 +11,10 @@ RNDIS Drivers for Zero w 1.1
   - ```bash
     modules-load=dwc2,g_ether
     ```
-  - Or else just paste this in the file: `console=serial0,115200 console=tty1 root=PARTUUID=5f858bfa-02 rootfstype=ext4 fsck.repair=yes rootwait cfg80211.ieee80211_regdom=GB modules-load=dwc2,g_ether`
+  - Or else just paste this in the file:
+    - ```bash
+      console=serial0,115200 console=tty1 root=PARTUUID=5f858bfa-02 rootfstype=ext4 fsck.repair=yes rootwait cfg80211.ieee80211_regdom=GB modules-load=dwc2,g_ether
+      ```
 - *Step 3:* Run this command: `sudo apt-get install bridge-utils libs3dw2`
 - *Step 4:* Reboot: `sudo reboot`
 
